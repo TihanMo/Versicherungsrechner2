@@ -1,2 +1,2 @@
-# Versicherungsrechner2
-Versicherungsrechner des Moduls
+# Versicherungsrechner 2
+Versicherungsrechner des Moduls Prog 1
