@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+}
+
+header {
+  background: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.auth-buttons button {
+  border: 1px solid #000;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.auth-buttons .login-btn {
+  border-color: #000;
+}
+
+.auth-buttons .register-btn {
+  border-color: #000;
+}

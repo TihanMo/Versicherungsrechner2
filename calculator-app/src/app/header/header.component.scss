@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: transparent;
+    color: #000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .auth-buttons button {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .login-btn {
+    border-color: #000;
+  }
+  
+  .auth-buttons .register-btn {
+    border-color: #000;
+  }
+  
