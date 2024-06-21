@@ -13,15 +13,17 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
 | ----------------------------- | ------------------------------- | ---------------------------------- |
 | Autopolice berechnen          | Woher Daten?                    | Öffentliche Daten benutzen         |
 | Autoversicherung wechseln     | Woher Zahlen von anderen?       | Werbevertrag                       |
-| Autoversicerungen vergleichen | Wie stellt man vergleiche da?   | Direktvergleich zwischen Anbietern |
+| Autoversicerungen vergleichen | Wie stellt man vergleiche dar?   | Direktvergleich zwischen Anbietern |
 | Hausrat berechnen             | Welche Rechenmethode nutzt man? | Quadratmetermodell                 |
 
 #### Beispiele von UI
-![UI Beispiel 1](./Bilder/Pasted%20image%2020240322130814.png)
-![UI Beispiel 2](./Bilder/Pasted%20image%2020240322130852.png)
-![UI Beispiel 3](./Bilder/Pasted%20image%2020240322130924.png)
-![UI Beispiel 4](./Bilder/Pasted%20image%2020240322131751.png)
-![UI Beispiel 5](./Bilder/Pasted%20image%2020240324232725.png)
+<div style="text-align: center;">
+  <img src="./Bilder/Pasted%20image%2020240322130814.png" alt="UI Beispiel 1" style="width: 80%; margin: 10px 0;">
+  <img src="./Bilder/Pasted%20image%2020240322130852.png" alt="UI Beispiel 2" style="width: 80%; margin: 10px 0;">
+  <img src="./Bilder/Pasted%20image%2020240322130924.png" alt="UI Beispiel 3" style="width: 80%; margin: 10px 0;">
+  <img src="./Bilder/Pasted%20image%2020240322131751.png" alt="UI Beispiel 4" style="width: 80%; margin: 10px 0;">
+  <img src="./Bilder/Pasted%20image%2020240324232725.png" alt="UI Beispiel 5" style="width: 80%; margin: 10px 0;">
+</div>
 
 ### Problem Statement Map
 
@@ -292,14 +294,12 @@ Figma link:
 
 ## Quellen / Referenzen
 
-Vergleiche von anderen Websiten:
-- https://www.comparis.ch/
-- https://www.axa.ch/de/privatkunden.html
-- https://secure.mobiliar.ch/praemienrechner/casa-grundlagen
-- https://www.gch.generali.ch/privatkunden/fahrzeuge-reisen/autoversicherung/offerte-autoversicherung
-Ideen/Inspiration für UX-Design Prozess:
-- https://chat.openai.com/
-Figma Templates:
-- https://www.figma.com/community/file/1232528346774034120/login-sign-up-templates-desktop?searchSessionId=lu5zlapk-1t34em9w9fc
-Wohnzimmer Bild:
-- https://pixabay.com/de/photos/wohnzimmer-innenarchitektur-m%C3%B6bel-1835923/
+### Vergleiche von anderen Websiten:
+- [comparis.ch](https://www.comparis.ch/)
+- [AXA](https://www.axa.ch/de/privatkunden.html)
+- [Mobiliar Prämienrechner](https://secure.mobiliar.ch/praemienrechner/casa-grundlagen)
+- [Generali Autoversicherung](https://www.gch.generali.ch/privatkunden/fahrzeuge-reisen/autoversicherung/offerte-autoversicherung)
+
+### Ideen/Inspiration:
+- [OpenAI Chat](https://chat.openai.com/)
+- [Figma Templates](https://www.figma.com/community/file/1232528346774034120/login-sign-up-templates-desktop?searchSessionId=lu5zlapk-1t34em9w9fc)
