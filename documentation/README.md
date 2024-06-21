@@ -1,7 +1,6 @@
-
 ## Recherche
 
-Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/board/uXjVNgK5FHI=/?share_link_id=352239534071
+Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://miro.com/app/board/uXjVNgK5FHI=/?share_link_id=352239534071)
 
 ### Versicherungsrechner Kennenlernen
 
@@ -16,15 +15,13 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/bo
 | Autoversicherung wechseln     | Woher Zahlen von anderen?       | Werbevertrag                       |
 | Autoversicerungen vergleichen | Wie stellt man vergleiche da?   | Direktvergleich zwischen Anbietern |
 | Hausrat berechnen             | Welche Rechenmethode nutzt man? | Quadratmetermodell                 |
+
 #### Beispiele von UI
-![[./Bilder/Pasted image 20240322130814.png]]
-![[./Bilder/Pasted image 20240322130852.png]]
-![[./Bilder/Pasted image 20240322130924.png]]
-![[./Bilder/Pasted image 20240322131751.png]]
-![[./Bilder/Pasted image 20240324232725.png]]
-
-
-
+![UI Beispiel 1](./Bilder/Pasted%20image%2020240322130814.png)
+![UI Beispiel 2](./Bilder/Pasted%20image%2020240322130852.png)
+![UI Beispiel 3](./Bilder/Pasted%20image%2020240322130924.png)
+![UI Beispiel 4](./Bilder/Pasted%20image%2020240322131751.png)
+![UI Beispiel 5](./Bilder/Pasted%20image%2020240324232725.png)
 
 ### Problem Statement Map
 
@@ -143,6 +140,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/bo
     - **Handlungen:**
         - Max überprüft die Versicherungsdokumente sorgfältig und sichert sie an einem zugänglichen Ort.
         - Er plant, die Versicherungsdetails in seine Reisevorbereitungen einzubeziehen und notwendige Kontaktdaten griffbereit zu halten.
+
 #### Maria Mutter
 1. **Phase: Identifizierung des Versicherungsbedarfs für die Familie**
     
@@ -201,7 +199,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/bo
 2. **Einfachere Online-Recherche:** Verbesserung der Online-Versicherungsrechner und -Plattformen, um Marias Suche nach Versicherungen zu vereinfachen und ihre Frustration über komplexe Recherche- und Vergleichsprozesse zu reduzieren.
 
 ### Key Screens
-![[./Bilder/Pasted image 20240322142119.png]]
+![Key Screen 1](./Bilder/Pasted%20image%2020240322142119.png)
 
 ### User Stories
 #### Versicherung berechnen
@@ -230,14 +228,14 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/bo
 ### Wireframe
 
 Figma link:
-https://www.figma.com/file/yvczcEs5roF7GnffkcIDtm/Versicherungsrechner-2?type=design&node-id=0%3A1&mode=design&t=LADFwJdGiodN6JSW-1
+[Versicherungsrechner Figma](https://www.figma.com/file/yvczcEs5roF7GnffkcIDtm/Versicherungsrechner-2?type=design&node-id=0%3A1&mode=design&t=LADFwJdGiodN6JSW-1)
 
 #### Landing Page / Home Page
-![[./Bilder/Pasted image 20240324231627.png]]
+![Landing Page](./Bilder/Pasted%20image%2020240324231627.png)
 #### Login Page
-![[./Bilder/Pasted image 20240324231531.png]]
+![Login Page](./Bilder/Pasted%20image%2020240324231531.png)
 #### Sign Up Page
-![[./Bilder/Pasted image 20240324231651.png]]
+![Sign Up Page](./Bilder/Pasted%20image%2020240324231651.png)
 
 #### Versicherungsrechner
 
