@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+    background: linear-gradient(to bottom, #1c92d2, #ffffff);
   
     header {
       display: flex;
