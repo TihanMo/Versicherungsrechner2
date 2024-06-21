@@ -13,7 +13,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
 | ----------------------------- | ------------------------------- | ---------------------------------- |
 | Autopolice berechnen          | Woher Daten?                    | Öffentliche Daten benutzen         |
 | Autoversicherung wechseln     | Woher Zahlen von anderen?       | Werbevertrag                       |
-| Autoversicerungen vergleichen | Wie stellt man vergleiche dar?   | Direktvergleich zwischen Anbietern |
+| Autoversicherungen vergleichen | Wie stellt man vergleiche dar?   | Direktvergleich zwischen Anbietern |
 | Hausrat berechnen             | Welche Rechenmethode nutzt man? | Quadratmetermodell                 |
 
 #### Beispiele von UI
@@ -261,6 +261,8 @@ Figma link:
 - <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" width="20" height="20"> Git
 - <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20"> GitHub
 
+### Systemdiagramm
+<img src="./Bilder/image.png" alt="Systemdiagramm" width="300">
 
 ### Angular Commands
 
