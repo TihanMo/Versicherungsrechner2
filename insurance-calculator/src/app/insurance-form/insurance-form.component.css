@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
   background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
   padding: 1rem;
