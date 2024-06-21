@@ -1,6 +1,8 @@
 
 ## Recherche
 
+Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/board/uXjVNgK5FHI=/?share_link_id=352239534071
+
 ### Versicherungsrechner Kennenlernen
 
 - Die meisten Versicherungs- / Prämienrechner haben eine Schritt für Schritt Architektur.
@@ -15,12 +17,12 @@
 | Autoversicerungen vergleichen | Wie stellt man vergleiche da?   | Direktvergleich zwischen Anbietern |
 | Hausrat berechnen             | Welche Rechenmethode nutzt man? | Quadratmetermodell                 |
 #### Beispiele von UI
-![[Pasted image 20240322130814.png]]
+![[./Bilder/Pasted image 20240322130814.png]]
 
-![[Pasted image 20240322130852.png]]
-![[Pasted image 20240322130924.png]]
-![[Pasted image 20240322131751.png]]
-![[Pasted image 20240324232725.png]]
+![[./Bilder/Pasted image 20240322130852.png]]
+![[./Bilder/Pasted image 20240322130924.png]]
+![[./Bilder/Pasted image 20240322131751.png]]
+![[./Bilder/Pasted image 20240324232725.png]]
 
 
 
@@ -202,7 +204,7 @@ ChatGPT can make mistakes. Consider checking important information.
 2. **Einfachere Online-Recherche:** Verbesserung der Online-Versicherungsrechner und -Plattformen, um Marias Suche nach Versicherungen zu vereinfachen und ihre Frustration über komplexe Recherche- und Vergleichsprozesse zu reduzieren.
 
 ### Key Screens
-![[Pasted image 20240322142119.png]]
+![[./Bilder/Pasted image 20240322142119.png]]
 
 ### User Stories
 #### Versicherung berechnen
@@ -234,15 +236,13 @@ Figma link:
 https://www.figma.com/file/yvczcEs5roF7GnffkcIDtm/Versicherungsrechner-2?type=design&node-id=0%3A1&mode=design&t=LADFwJdGiodN6JSW-1
 
 #### Landing Page / Home Page
-![[Pasted image 20240324231627.png]]
+![[./Bilder/Pasted image 20240324231627.png]]
 #### Login Page
-![[Pasted image 20240324231531.png]]
+![[./Bilder/Pasted image 20240324231531.png]]
 #### Sign Up Page
-![[Pasted image 20240324231651.png]]
+![[./Bilder/Pasted image 20240324231651.png]]
 
 #### Versicherungsrechner
-
-#### Versicherungsplan
 
 ## Programmieren
 

@@ -4,11 +4,13 @@ import { VersicherungsplanComponent } from './versicherungsplan/versicherungspla
 import { VersicherungsrechnerComponent } from './versicherungsrechner/versicherungsrechner.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
-export const appRoutes: Routes = [
+export const routes: Routes = [
   { path: '', component: MainContentComponent },
   { path: 'versicherungsplan', component: VersicherungsplanComponent },
   { path: 'versicherungsrechner', component: VersicherungsrechnerComponent },
   { path: 'impressum', component: ImpressumComponent },
   { path: 'datenschutz', component: DatenschutzComponent },
+  { path: 'sign-in', component: SignInComponent },
 ];
