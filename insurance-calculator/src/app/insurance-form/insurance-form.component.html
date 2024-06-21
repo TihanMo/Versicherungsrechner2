@@ -1,1 +1,23 @@
-<p>insurance-form works!</p>
+<form (ngSubmit)="calculateInsurance()">
+    <div>
+      <label for="carModel">Car Model:</label>
+      <input type="text" id="carModel" [(ngModel)]="carModel" name="carModel" required>
+    </div>
+    <div>
+      <label for="year">Year:</label>
+      <input type="number" id="year" [(ngModel)]="year" name="year" required>
+    </div>
+    <div>
+      <label for="age">Driver's Age:</label>
+      <input type="number" id="age" [(ngModel)]="age" name="age" required>
+    </div>
+    <div>
+      <label for="history">Driving History (Years):</label>
+      <input type="number" id="history" [(ngModel)]="history" name="history" required>
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+  <div *ngIf="insuranceCost !== null">
+    <p>Your estimated insurance cost is: {{insuranceCost | currency}}</p>
+</div>
+  
