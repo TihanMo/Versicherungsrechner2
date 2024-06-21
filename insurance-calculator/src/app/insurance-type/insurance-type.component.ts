@@ -21,7 +21,7 @@ export class InsuranceTypeComponent {
   }
 
   calculateInsuranceOptions(params: any) {
-    const { carBrand, carModel, year, mileage, location, driverAge, experience } = params;
+    const { carBrand, carModel, year, mileage, driverAge, experience, horsepower, fuel } = params;
 
     const baseCost = 500;
     const carAge = new Date().getFullYear() - year;
@@ -29,13 +29,14 @@ export class InsuranceTypeComponent {
     const brandFactor = this.getBrandFactor(carBrand);
     const ageFactor = this.getAgeFactor(carAge);
     const mileageFactor = this.getMileageFactor(mileage);
-    const locationFactor = this.getLocationFactor(location);
     const driverAgeFactor = this.getDriverAgeFactor(driverAge);
     const experienceFactor = this.getExperienceFactor(experience);
+    const horsepowerFactor = this.getHorsepowerFactor(horsepower);
+    const fuelFactor = this.getFuelFactor(fuel);
 
-    const basicCost = baseCost * brandFactor * ageFactor * mileageFactor * locationFactor * driverAgeFactor * experienceFactor * 1.0;
-    const standardCost = baseCost * brandFactor * ageFactor * mileageFactor * locationFactor * driverAgeFactor * experienceFactor * 1.5;
-    const premiumCost = baseCost * brandFactor * ageFactor * mileageFactor * locationFactor * driverAgeFactor * experienceFactor * 2.0;
+    const basicCost = baseCost * brandFactor * ageFactor * mileageFactor * driverAgeFactor * experienceFactor * horsepowerFactor * fuelFactor * 1.0;
+    const standardCost = baseCost * brandFactor * ageFactor * mileageFactor * driverAgeFactor * experienceFactor * horsepowerFactor * fuelFactor * 1.5;
+    const premiumCost = baseCost * brandFactor * ageFactor * mileageFactor * driverAgeFactor * experienceFactor * horsepowerFactor * fuelFactor * 2.0;
 
     this.insuranceTypes = [
       { name: 'Basis', value: 'basic', description: 'Basisversicherung', cost: basicCost },
@@ -45,8 +46,14 @@ export class InsuranceTypeComponent {
   }
 
   getBrandFactor(brand: string): number {
-    const luxuryBrands = ['BMW', 'Mercedes', 'Audi'];
-    return luxuryBrands.includes(brand) ? 1.5 : 1.0;
+    const luxuryBrands = ['BMW', 'Mercedes', 'Audi', 'Lexus', 'Alfa Romeo'];
+    const midRangeBrands = ['Toyota', 'Honda', 'Volkswagen', 'Hyundai', 'Kia', 'Mazda', 'Subaru'];
+    const economyBrands = ['Ford', 'Chevrolet', 'Nissan', 'Jeep', 'Dodge', 'Ram', 'Chrysler', 'Fiat'];
+
+    if (luxuryBrands.includes(brand)) return 1.5;
+    if (midRangeBrands.includes(brand)) return 1.2;
+    if (economyBrands.includes(brand)) return 1.0;
+    return 1.0;
   }
 
   getAgeFactor(age: number): number {
@@ -61,11 +68,6 @@ export class InsuranceTypeComponent {
     return 1.5;
   }
 
-  getLocationFactor(location: string): number {
-    const highRiskAreas = ['City Center', 'Urban'];
-    return highRiskAreas.includes(location) ? 1.3 : 1.0;
-  }
-
   getDriverAgeFactor(age: number): number {
     if (age < 25) return 1.5;
     if (age < 60) return 1.0;
@@ -76,6 +78,18 @@ export class InsuranceTypeComponent {
     if (experience < 2) return 1.5;
     if (experience < 5) return 1.2;
     return 1.0;
+  }
+
+  getHorsepowerFactor(horsepower: number): number {
+    if (horsepower < 100) return 1.0;
+    if (horsepower < 200) return 1.2;
+    return 1.5;
+  }
+
+  getFuelFactor(fuel: string): number {
+    if (fuel === 'electric') return 1.0;
+    if (fuel === 'hybrid') return 1.2;
+    return 1.5;
   }
 
   getImageForType(type: string): string {

@@ -46,7 +46,7 @@
       </div>
     </div>
     <div>
-      <label for="horsepower">Pferdestärken (HP):</label>
+      <label for="horsepower">Pferdestärken (kWh):</label>
       <input type="number" id="horsepower" formControlName="horsepower" required>
       <div *ngIf="insuranceForm.get('horsepower')?.invalid && (insuranceForm.get('horsepower')?.dirty || insuranceForm.get('horsepower')?.touched)" class="error">
         Pferdestärken müssen positiv sein.
@@ -67,6 +67,6 @@
     <button type="submit" [disabled]="insuranceForm.invalid">Berechnen</button>
   </form>
   <div *ngIf="insuranceCost !== null">
-    <p>Ihre geschätzte Versicherungsprämie beträgt: {{insuranceCost | currency:'EUR'}}</p>
+    <p>Ihre geschätzte Versicherungsprämie beträgt: {{insuranceCost | currency:'CHF'}}</p>
   </div>
 </div>
