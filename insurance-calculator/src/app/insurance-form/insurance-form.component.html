@@ -6,30 +6,51 @@
       <select id="carBrand" formControlName="carBrand" required>
         <option *ngFor="let brand of carBrands" [value]="brand">{{ brand }}</option>
       </select>
+      <div *ngIf="insuranceForm.get('carBrand')?.invalid && (insuranceForm.get('carBrand')?.dirty || insuranceForm.get('carBrand')?.touched)" class="error">
+        Fahrzeugmarke ist erforderlich.
+      </div>
     </div>
     <div>
       <label for="carModel">Fahrzeugmodell:</label>
       <input type="text" id="carModel" formControlName="carModel" required>
+      <div *ngIf="insuranceForm.get('carModel')?.invalid && (insuranceForm.get('carModel')?.dirty || insuranceForm.get('carModel')?.touched)" class="error">
+        Fahrzeugmodell ist erforderlich.
+      </div>
     </div>
     <div>
       <label for="year">Baujahr:</label>
       <input type="number" id="year" formControlName="year" required>
+      <div *ngIf="insuranceForm.get('year')?.invalid && (insuranceForm.get('year')?.dirty || insuranceForm.get('year')?.touched)" class="error">
+        Baujahr ist erforderlich.
+      </div>
     </div>
     <div>
       <label for="mileage">Kilometerstand (KM):</label>
       <input type="number" id="mileage" formControlName="mileage" required>
+      <div *ngIf="insuranceForm.get('mileage')?.invalid && (insuranceForm.get('mileage')?.dirty || insuranceForm.get('mileage')?.touched)" class="error">
+        Kilometerstand ist erforderlich.
+      </div>
     </div>
     <div>
       <label for="driverAge">Alter des Fahrers:</label>
       <input type="number" id="driverAge" formControlName="driverAge" required>
+      <div *ngIf="insuranceForm.get('driverAge')?.invalid && (insuranceForm.get('driverAge')?.dirty || insuranceForm.get('driverAge')?.touched)" class="error">
+        Alter des Fahrers ist erforderlich.
+      </div>
     </div>
     <div>
       <label for="experience">Fahrpraxis (Jahre):</label>
       <input type="number" id="experience" formControlName="experience" required>
+      <div *ngIf="insuranceForm.get('experience')?.invalid && (insuranceForm.get('experience')?.dirty || insuranceForm.get('experience')?.touched)" class="error">
+        Fahrpraxis ist erforderlich.
+      </div>
     </div>
     <div>
       <label for="horsepower">Pferdestärken (HP):</label>
       <input type="number" id="horsepower" formControlName="horsepower" required>
+      <div *ngIf="insuranceForm.get('horsepower')?.invalid && (insuranceForm.get('horsepower')?.dirty || insuranceForm.get('horsepower')?.touched)" class="error">
+        Pferdestärken müssen positiv sein.
+      </div>
     </div>
     <div>
       <label for="fuel">Kraftstoffart:</label>
@@ -39,8 +60,11 @@
         <option value="electric">Elektrisch</option>
         <option value="hybrid">Hybrid</option>
       </select>
+      <div *ngIf="insuranceForm.get('fuel')?.invalid && (insuranceForm.get('fuel')?.dirty || insuranceForm.get('fuel')?.touched)" class="error">
+        Kraftstoffart ist erforderlich.
+      </div>
     </div>
-    <button type="submit">Berechnen</button>
+    <button type="submit" [disabled]="insuranceForm.invalid">Berechnen</button>
   </form>
   <div *ngIf="insuranceCost !== null">
     <p>Ihre geschätzte Versicherungsprämie beträgt: {{insuranceCost | currency:'EUR'}}</p>

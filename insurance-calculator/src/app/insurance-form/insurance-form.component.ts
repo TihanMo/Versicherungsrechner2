@@ -21,29 +21,31 @@ export class InsuranceFormComponent {
       carBrand: ['', Validators.required],
       carModel: ['', Validators.required],
       year: [new Date().getFullYear(), Validators.required],
-      mileage: [0, Validators.required],
-      driverAge: [18, Validators.required],
-      experience: [0, Validators.required],
-      horsepower: [0, Validators.required],
+      mileage: [0, [Validators.required, Validators.min(0)]],
+      driverAge: [18, [Validators.required, Validators.min(18)]],
+      experience: [0, [Validators.required, Validators.min(0)]],
+      horsepower: [0, [Validators.required, Validators.min(0)]],
       fuel: ['', Validators.required]
     });
   }
 
   navigateToInsuranceType() {
-    const { carBrand, carModel, year, mileage, driverAge, experience, horsepower, fuel } = this.insuranceForm.value;
+    if (this.insuranceForm.valid) {
+      const { carBrand, carModel, year, mileage, driverAge, experience, horsepower, fuel } = this.insuranceForm.value;
 
-    this.router.navigate(['/versicherungsplan'], {
-      queryParams: {
-        carBrand,
-        carModel,
-        year,
-        mileage,
-        driverAge,
-        experience,
-        horsepower,
-        fuel
-      }
-    });
+      this.router.navigate(['/versicherungsplan'], {
+        queryParams: {
+          carBrand,
+          carModel,
+          year,
+          mileage,
+          driverAge,
+          experience,
+          horsepower,
+          fuel
+        }
+      });
+    }
   }
 
   calculateInsurance() {
