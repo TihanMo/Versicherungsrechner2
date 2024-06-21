@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -14,20 +14,23 @@ export class InsuranceFormComponent {
   insuranceForm: FormGroup;
   insuranceCost: number | null = null;
 
+  carBrands: string[] = ['BMW', 'Mercedes', 'Audi', 'Toyota', 'Honda', 'Ford', 'Chevrolet', 'Nissan', 'Volkswagen', 'Hyundai', 'Kia', 'Mazda', 'Subaru', 'Lexus', 'Jeep', 'Dodge', 'Ram', 'Chrysler', 'Fiat', 'Alfa Romeo'];
+
   constructor(private fb: FormBuilder, private router: Router) {
     this.insuranceForm = this.fb.group({
-      carBrand: [''],
-      carModel: [''],
-      year: [new Date().getFullYear()],
-      mileage: [0],
-      location: [''],
-      driverAge: [18],
-      experience: [0]
+      carBrand: ['', Validators.required],
+      carModel: ['', Validators.required],
+      year: [new Date().getFullYear(), Validators.required],
+      mileage: [0, Validators.required],
+      driverAge: [18, Validators.required],
+      experience: [0, Validators.required],
+      horsepower: [0, Validators.required],
+      fuel: ['', Validators.required]
     });
   }
 
   navigateToInsuranceType() {
-    const { carBrand, carModel, year, mileage, location, driverAge, experience } = this.insuranceForm.value;
+    const { carBrand, carModel, year, mileage, driverAge, experience, horsepower, fuel } = this.insuranceForm.value;
 
     this.router.navigate(['/versicherungsplan'], {
       queryParams: {
@@ -35,15 +38,16 @@ export class InsuranceFormComponent {
         carModel,
         year,
         mileage,
-        location,
         driverAge,
-        experience
+        experience,
+        horsepower,
+        fuel
       }
     });
   }
 
   calculateInsurance() {
-    const { carBrand, carModel, year, mileage, location, driverAge, experience, coverageType } = this.insuranceForm.value;
+    const { carBrand, carModel, year, mileage, driverAge, experience, horsepower, fuel, coverageType } = this.insuranceForm.value;
 
     let baseCost = 500;
     let carAge = new Date().getFullYear() - year;
@@ -51,17 +55,24 @@ export class InsuranceFormComponent {
     const brandFactor = this.getBrandFactor(carBrand);
     const ageFactor = this.getAgeFactor(carAge);
     const mileageFactor = this.getMileageFactor(mileage);
-    const locationFactor = this.getLocationFactor(location);
     const driverAgeFactor = this.getDriverAgeFactor(driverAge);
     const experienceFactor = this.getExperienceFactor(experience);
+    const horsepowerFactor = this.getHorsepowerFactor(horsepower);
+    const fuelFactor = this.getFuelFactor(fuel);
     const coverageFactor = this.getCoverageFactor(coverageType);
 
-    this.insuranceCost = baseCost * brandFactor * ageFactor * mileageFactor * locationFactor * driverAgeFactor * experienceFactor * coverageFactor;
+    this.insuranceCost = baseCost * brandFactor * ageFactor * mileageFactor * driverAgeFactor * experienceFactor * horsepowerFactor * fuelFactor * coverageFactor;
   }
 
   getBrandFactor(brand: string): number {
-    const luxuryBrands = ['BMW', 'Mercedes', 'Audi'];
-    return luxuryBrands.includes(brand) ? 1.5 : 1.0;
+    const luxuryBrands = ['BMW', 'Mercedes', 'Audi', 'Lexus', 'Alfa Romeo'];
+    const midRangeBrands = ['Toyota', 'Honda', 'Volkswagen', 'Hyundai', 'Kia', 'Mazda', 'Subaru'];
+    const economyBrands = ['Ford', 'Chevrolet', 'Nissan', 'Jeep', 'Dodge', 'Ram', 'Chrysler', 'Fiat'];
+
+    if (luxuryBrands.includes(brand)) return 1.5;
+    if (midRangeBrands.includes(brand)) return 1.2;
+    if (economyBrands.includes(brand)) return 1.0;
+    return 1.0;
   }
 
   getAgeFactor(age: number): number {
@@ -76,11 +87,6 @@ export class InsuranceFormComponent {
     return 1.5;
   }
 
-  getLocationFactor(location: string): number {
-    const highRiskAreas = ['City Center', 'Urban'];
-    return highRiskAreas.includes(location) ? 1.3 : 1.0;
-  }
-
   getDriverAgeFactor(age: number): number {
     if (age < 25) return 1.5;
     if (age < 60) return 1.0;
@@ -91,6 +97,18 @@ export class InsuranceFormComponent {
     if (experience < 2) return 1.5;
     if (experience < 5) return 1.2;
     return 1.0;
+  }
+
+  getHorsepowerFactor(horsepower: number): number {
+    if (horsepower < 100) return 1.0;
+    if (horsepower < 200) return 1.2;
+    return 1.5;
+  }
+
+  getFuelFactor(fuel: string): number {
+    if (fuel === 'electric') return 1.0;
+    if (fuel === 'hybrid') return 1.2;
+    return 1.5;
   }
 
   getCoverageFactor(type: string): number {

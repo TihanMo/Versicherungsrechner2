@@ -3,7 +3,9 @@
     <h3>Angabe der Fahrzeugdetails</h3>
     <div>
       <label for="carBrand">Fahrzeugmarke:</label>
-      <input type="text" id="carBrand" formControlName="carBrand" required>
+      <select id="carBrand" formControlName="carBrand" required>
+        <option *ngFor="let brand of carBrands" [value]="brand">{{ brand }}</option>
+      </select>
     </div>
     <div>
       <label for="carModel">Fahrzeugmodell:</label>
@@ -18,16 +20,25 @@
       <input type="number" id="mileage" formControlName="mileage" required>
     </div>
     <div>
-      <label for="location">Abstellort:</label>
-      <input type="text" id="location" formControlName="location" required>
-    </div>
-    <div>
       <label for="driverAge">Alter des Fahrers:</label>
       <input type="number" id="driverAge" formControlName="driverAge" required>
     </div>
     <div>
       <label for="experience">Fahrpraxis (Jahre):</label>
       <input type="number" id="experience" formControlName="experience" required>
+    </div>
+    <div>
+      <label for="horsepower">Pferdestärken (HP):</label>
+      <input type="number" id="horsepower" formControlName="horsepower" required>
+    </div>
+    <div>
+      <label for="fuel">Kraftstoffart:</label>
+      <select id="fuel" formControlName="fuel" required>
+        <option value="petrol">Benzin</option>
+        <option value="diesel">Diesel</option>
+        <option value="electric">Elektrisch</option>
+        <option value="hybrid">Hybrid</option>
+      </select>
     </div>
     <button type="submit">Berechnen</button>
   </form>
