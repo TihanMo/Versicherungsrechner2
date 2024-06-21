@@ -1,71 +1,70 @@
 .insurance-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
-    padding: 1rem;
-    color: #333;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffffcc;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2, h3 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  form div {
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    color: #333;
-    box-sizing: border-box;
-  }
-  
-  button {
-    padding: 0.5rem 1rem;
-    background-color: #21c581;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-  }
-  
-  button:hover {
-    background-color: #1c8658;
-  }
-  
-  p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+  padding: 1rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffffcc;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #21c581;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #1c8658;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
