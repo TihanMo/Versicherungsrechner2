@@ -5,12 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-header',
   standalone: true,
   imports: [RouterModule],
-  template: `
-    <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/calculate">Calculate Insurance</a>
-    </nav>
-  `,
+  templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {}

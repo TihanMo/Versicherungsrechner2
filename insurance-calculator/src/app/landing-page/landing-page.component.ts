@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  template: `
-    <h1>Welcome to Car Insurance Calculator</h1>
-    <p>Use our calculator to estimate your car insurance cost.</p>
-    <a routerLink="/calculate">Start Calculating</a>
-  `
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.css']
 })
-export class LandingPageComponent {}
+export class LandingPageComponent {
+  constructor(private router: Router) {}
+
+  navigateToCalculate() {
+    this.router.navigate(['/calculate']);
+  }
+}
