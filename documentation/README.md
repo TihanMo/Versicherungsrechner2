@@ -178,8 +178,6 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: https://miro.com/app/bo
         - Maria überprüft die Versicherungsdokumente sorgfältig und sichert sie an einem zugänglichen Ort.
         - Sie plant, die Versicherungsdetails in ihre Familienfinanzen einzubeziehen und ihre Kinder und Partner über die wichtigsten Aspekte zu informieren.
 
-ChatGPT can make mistakes. Consider checking important information.
-
 ### Opportunity Areas
 
 #### Für Laura Schülerin:
@@ -247,16 +245,52 @@ https://www.figma.com/file/yvczcEs5roF7GnffkcIDtm/Versicherungsrechner-2?type=de
 
 ### Tech Stack Auswahl
 
-### Wie funktioniert Angular
-- Components
-- Templates, directives binding
-- Routing
+#### Frontend:
+- <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" width="20" height="20"> Angular
+- <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="TypeScript" width="20" height="20"> TypeScript
+- <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML" width="20" height="20"> HTML
+- <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" width="20" height="20"> CSS
+- <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular CLI" width="20" height="20"> Angular CLI
+
+#### Entwicklungs-Tools
+- <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="20" height="20"> Node.js
+- <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg" alt="npm" width="20" height="20"> npm
+- <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Visual Studio Code" width="20" height="20"> Visual Studio Code
+
+#### Versionskontrolle
+- <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" width="20" height="20"> Git
+- <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20"> GitHub
+
 
 ### Angular Commands
-npm install -g @angular/cli
-ng new my-app
-ng serve --open
-ng generate component home --inline-template --skip-tests
+
+ ```sh
+ npm install -g @angular/cli
+ ```
+ ```sh
+ ng new my-app
+ ```
+ ```sh
+ ng serve --open
+ ```
+ ```sh
+ ng generate component home --inline-template --skip-tests
+ ```
+ ```sh
+ ng generate class my-class
+ ```
+  ```sh
+  ng generate interface my-interface
+  ```
+  ```sh
+  ng build --prod
+  ```
+  ```sh
+  ng lint
+  ```
+  ```sh
+  ng update @angular/cli @angular/core
+  ```
 
 ## Quellen / Referenzen
 
