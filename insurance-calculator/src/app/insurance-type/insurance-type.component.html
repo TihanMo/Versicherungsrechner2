@@ -1,0 +1,12 @@
+<div class="insurance-type-container">
+  <h3>Wählen Sie die Versicherungsart</h3>
+  <div class="cards">
+    <div class="card" *ngFor="let type of insuranceTypes" (click)="selectType(type)">
+      <img [src]="getImageForType(type.value)" alt="{{ type.name }}">
+      <h4>{{ type.name }}</h4>
+      <p>{{ type.description }}</p>
+      <p>Kosten: {{ type.cost | currency:'EUR' }}</p>
+    </div>
+  </div>
+  <button (click)="goBack()">Zurück</button>
+</div>

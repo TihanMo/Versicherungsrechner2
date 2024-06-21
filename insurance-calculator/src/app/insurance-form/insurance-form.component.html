@@ -1,5 +1,5 @@
 <div class="insurance-form">
-  <form [formGroup]="insuranceForm" (ngSubmit)="calculateInsurance()">
+  <form [formGroup]="insuranceForm" (ngSubmit)="navigateToInsuranceType()">
     <h3>Angabe der Fahrzeugdetails</h3>
     <div>
       <label for="carBrand">Fahrzeugmarke:</label>
@@ -20,6 +20,14 @@
     <div>
       <label for="location">Abstellort:</label>
       <input type="text" id="location" formControlName="location" required>
+    </div>
+    <div>
+      <label for="driverAge">Alter des Fahrers:</label>
+      <input type="number" id="driverAge" formControlName="driverAge" required>
+    </div>
+    <div>
+      <label for="experience">Fahrpraxis (Jahre):</label>
+      <input type="number" id="experience" formControlName="experience" required>
     </div>
     <button type="submit">Berechnen</button>
   </form>

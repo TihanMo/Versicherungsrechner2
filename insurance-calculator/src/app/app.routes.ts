@@ -5,15 +5,17 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { LoginComponent } from './login/login.component';
+import { InsuranceTypeComponent } from './insurance-type/insurance-type.component';
 
 export const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'calculate', component: InsuranceFormComponent },
   { path: 'versicherungsrechner', component: InsuranceFormComponent },
+  { path: 'versicherungsplan', component: InsuranceTypeComponent },
   { path: 'impressum', component: ImpressumComponent },
   { path: 'datenschutz', component: DatenschutzComponent },
-  { path: 'registrieren', component: SignInComponent},
-  { path: 'sign-in', component: SignInComponent},
+  { path: 'registrieren', component: SignInComponent },
+  { path: 'sign-in', component: SignInComponent },
   { path: 'anmelden', component: LoginComponent },
   { path: 'login', component: LoginComponent },
 ];
