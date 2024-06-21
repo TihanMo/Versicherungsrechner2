@@ -1,3 +1,18 @@
+## Inhaltsverzeichnis
+- [Recherche](#recherche)
+- [Problem Statement Map](#problem-statement-map)
+- [Proto Personas](#proto-personas)
+- [Journey Map](#journey-map)
+- [Opportunity Areas](#opportunity-areas)
+- [Key Screens](#key-screens)
+- [User Stories](#user-stories)
+- [Wireframe](#wireframe)
+- [Programmieren](#programmieren)
+- [Tech Stack Auswahl](#tech-stack-auswahl)
+- [Systemdiagramm](#systemdiagramm)
+- [Angular Commands](#angular-commands)
+- [Quellen / Referenzen](#quellen--referenzen)
+
 ## Recherche
 
 Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://miro.com/app/board/uXjVNgK5FHI=/?share_link_id=352239534071)
