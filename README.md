@@ -1,4 +1,4 @@
-# Versicherungsrechner Angular
+# Versicherungsrechner Angular  
 
 Vollständige Dokumentation zum UX Prozess und weiteres ist unter `/documentation` zu finden.
 
@@ -24,6 +24,7 @@ cd path/to/file/Versicherungsrechner_Angular
 npm i
 ```
 
+## Filestruktur  
 * `/Versicherungsrechner_Angular` Sammelordner für Relevante Ordner des Projekts
   * `/documentation` Vollständige Dokumentation zum Projekt
   * `/insurance-calculator` Angular Project 
