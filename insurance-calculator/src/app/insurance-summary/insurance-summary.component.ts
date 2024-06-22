@@ -20,7 +20,7 @@ export class InsuranceSummaryComponent {
     });
   }
 
-  redirectToExternal() {
-    window.location.href = 'https://www.example.com';
+  goBack() {
+    this.router.navigate(['/versicherungsrechner']);
   }
 }

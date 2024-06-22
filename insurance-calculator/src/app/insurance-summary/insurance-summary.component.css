@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: baseline;
     height: 100vh;
     background: linear-gradient(to bottom, #1c92d2, #ffffff);
     padding: 2rem;
-    color: #333;
+    color: #000000;
 }
 
 .summary-content {
@@ -15,18 +14,18 @@
     border-radius: 8px;
     max-width: 600px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
-    color: #333;
+    color: #000000;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 p {
-    color: #555;
+    color: #000000;
     line-height: 1.6;
     margin: 0.5rem 0;
 }
@@ -46,4 +45,24 @@ button {
 
 button:hover {
     background-color: #1c8658;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: #2c21c5;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
