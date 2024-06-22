@@ -2,7 +2,7 @@
 
 Vollständige Dokumentation zum UX Prozess und weiteres ist unter `/documentation` zu finden.  
 
-Die Website wurde mit Vercel deployed: [Versicherungsrechner Angular](https://versicherungsrechnerangular-l2cewn45n-tihanmos-projects.vercel.app/)  
+Die Website wurde mit Vercel deployed: [Versicherungsrechner Angular](https://versicherungsrechnerangular-2n76a54io-tihanmos-projects.vercel.app/)  
 
 Der Versicherungsrechner ist ein Projekt für Prog 1. Es ist eine Demo-Website ist ein Versicherungsrechner für ein Motorfahrzeug.
 
