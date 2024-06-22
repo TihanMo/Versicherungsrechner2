@@ -28,9 +28,9 @@ export class InsuranceTypeComponent {
     const premiumCost = baseCost * 1.5;
 
     this.insuranceTypes = [
-      { name: 'Basis', value: 'basic', description: 'Basisversicherung', cost: basicCost },
-      { name: 'Standard', value: 'standard', description: 'Standardversicherung', cost: standardCost },
-      { name: 'Premium', value: 'premium', description: 'Premiumversicherung', cost: premiumCost }
+      { name: 'Basis', value: 'basic', description: 'Eine grundlegende Versicherung mit minimaler Abdeckung zu einem erschwinglichen Preis', cost: basicCost },
+      { name: 'Standard', value: 'standard', description: 'Eine umfassendere Versicherung, die zusätzlichen Schutz und Leistungen bietet', cost: standardCost },
+      { name: 'Premium', value: 'premium', description: 'Eine umfassende Versicherung mit maximaler Abdeckung und zusätzlichen Vorteilen für vollständige Sicherheit.', cost: premiumCost }
     ];
   }
 
