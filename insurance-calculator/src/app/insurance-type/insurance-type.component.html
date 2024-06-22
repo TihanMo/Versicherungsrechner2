@@ -5,7 +5,7 @@
       <img [src]="getImageForType(type.value)" alt="{{ type.name }}">
       <h4>{{ type.name }}</h4>
       <p>{{ type.description }}</p>
-      <p>Kosten: {{ type.cost | currency:'EUR' }}</p>
+      <p>Kosten: {{ type.cost | currency:'CHF' }}</p>
     </div>
   </div>
   <button (click)="goBack()">Zurück</button>

@@ -104,7 +104,12 @@ export class InsuranceTypeComponent {
   }
 
   selectType(type: any) {
-    console.log('Selected Type:', type);
+    const params = {
+      ...this.queryParams,
+      selectedPackage: type.value,
+      insuranceSum: type.cost
+    };
+    this.router.navigate(['/abschluss'], { queryParams: params });
   }
 
   goBack() {

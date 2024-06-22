@@ -1,0 +1,9 @@
+<div class="insurance-summary">
+    <div class="summary-content">
+      <h3>Versicherungssumme und ausgewähltes Paket</h3>
+      <p>Versicherungssumme: {{ insuranceSum | currency:'CHF' }}</p>
+      <p>Ausgewähltes Paket: {{ selectedPackage }}</p>
+      <button (click)="redirectToExternal()">Weiter zur Webseite</button>
+    </div>
+  </div>
+  
