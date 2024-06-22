@@ -303,6 +303,7 @@ Figma link:
 - <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="20" height="20"> Node.js
 - <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg" alt="npm" width="20" height="20"> npm
 - <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Visual Studio Code" width="20" height="20"> Visual Studio Code
+- <img src="https://assets.vercel.com/image/upload/v1588805858/front/favicon/favicon-32x32.png" alt="Vercel" width="20" height="20"> Vercel
 
 #### Versionskontrolle
 - <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" width="20" height="20"> Git
