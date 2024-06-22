@@ -1,27 +1,26 @@
 <div class="login-container">
-    <div class="login-form">
-      <h2>Anmelden bei insured.ch</h2>
-      <p>Willkommen zurück!</p>
-      <form>
-        <div class="form-group">
-          <label for="email">Email-Adresse</label>
-          <input type="email" id="email" placeholder="johndoe@example.com">
-        </div>
-        <div class="form-group">
-          <label for="password">Passwort</label>
-          <input type="password" id="password" placeholder="********">
-        </div>
-        <button type="submit">Anmelden</button>
-      </form>
-      <div class="alternate-sign-in">
-        <p>ODER NUTZE</p>
-        <div class="social-buttons">
-          <button>Google</button>
-          <button>Apple</button>
-          <button>Facebook</button>
-        </div>
+  <div class="login-form">
+    <h2>Anmelden bei insured.ch</h2>
+    <p>Willkommen zurück!</p>
+    <form (submit)="showLoading($event)">
+      <div class="form-group">
+        <label for="email">Email-Adresse</label>
+        <input type="email" id="email" placeholder="johndoe@example.com" required>
       </div>
-      <footer>&copy; INSURED.CH 2024</footer>
+      <div class="form-group">
+        <label for="password">Passwort</label>
+        <input type="password" id="password" placeholder="********" required>
+      </div>
+      <button type="submit">Anmelden</button>
+    </form>
+    <div class="alternate-sign-in">
+      <p>ODER NUTZE</p>
+      <div class="social-buttons">
+        <button>Google</button>
+        <button>Apple</button>
+        <button>Facebook</button>
+      </div>
     </div>
+    <footer>&copy; INSURED.CH 2024</footer>
   </div>
-  
+</div>
