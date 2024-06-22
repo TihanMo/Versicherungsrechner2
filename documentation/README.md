@@ -1,17 +1,47 @@
 ## Inhaltsverzeichnis
+- [Inhaltsverzeichnis](#inhaltsverzeichnis)
 - [Recherche](#recherche)
-- [Problem Statement Map](#problem-statement-map)
-- [Proto Personas](#proto-personas)
-- [Journey Map](#journey-map)
-- [Opportunity Areas](#opportunity-areas)
-- [Key Screens](#key-screens)
-- [User Stories](#user-stories)
-- [Wireframe](#wireframe)
+  - [Versicherungsrechner Kennenlernen](#versicherungsrechner-kennenlernen)
+    - [Beispiele von UI](#beispiele-von-ui)
+  - [Problem Statement Map](#problem-statement-map)
+  - [Proto Personas](#proto-personas)
+    - [Laura Schülerin](#laura-schülerin)
+    - [Moritz Geschäftsleiter](#moritz-geschäftsleiter)
+    - [Maria Mutter](#maria-mutter)
+  - [Journey Map](#journey-map)
+    - [Laura Fahrschülerin](#laura-fahrschülerin)
+    - [Max Geschäftsleiter](#max-geschäftsleiter)
+    - [Maria Mutter](#maria-mutter-1)
+  - [Opportunity Areas](#opportunity-areas)
+    - [Für Laura Schülerin:](#für-laura-schülerin)
+    - [Für Max Geschäftsreisender:](#für-max-geschäftsreisender)
+    - [Für Maria Familienmutter:](#für-maria-familienmutter)
+  - [Key Screens](#key-screens)
+  - [User Stories](#user-stories)
+    - [Versicherung berechnen](#versicherung-berechnen)
+  - [Wireframe](#wireframe)
+    - [Landing Page / Home Page](#landing-page--home-page)
+    - [Login Page](#login-page)
+    - [Sign Up Page](#sign-up-page)
+    - [Versicherungsrechner](#versicherungsrechner)
+    - [Versicherungsplan](#versicherungsplan)
 - [Programmieren](#programmieren)
-- [Tech Stack Auswahl](#tech-stack-auswahl)
-- [Systemdiagramm](#systemdiagramm)
-- [Angular Commands](#angular-commands)
+  - [Tech Stack Auswahl](#tech-stack-auswahl)
+    - [Frontend:](#frontend)
+    - [Entwicklungs-Tools](#entwicklungs-tools)
+    - [Versionskontrolle](#versionskontrolle)
+    - [Warum dieses Stack?](#warum-dieses-stack)
+  - [Systemdiagramm](#systemdiagramm)
+  - [Angular Commands](#angular-commands)
+  - [Bilder der Implementierung](#bilder-der-implementierung)
+    - [Landing Page / Home Page](#landing-page--home-page-1)
+    - [Login Page](#login-page-1)
+    - [Sign Up Page](#sign-up-page-1)
+    - [Versicherungsrechner](#versicherungsrechner-1)
+    - [Versicherungsplan](#versicherungsplan-1)
+- [Reflexion](#reflexion)
 - [Quellen / Referenzen](#quellen--referenzen)
+
 
 ## Recherche
 
@@ -253,8 +283,10 @@ Figma link:
 ![Login Page](./Bilder/Pasted%20image%2020240324231531.png)
 #### Sign Up Page
 ![Sign Up Page](./Bilder/Pasted%20image%2020240324231651.png)
-
 #### Versicherungsrechner
+![Versicherungsrechner](./Bilder/Versicherungsrechner.png)
+#### Versicherungsplan
+![Versicherungsplan](./Bilder/Versicherungsplan.png)
 
 ## Programmieren
 
@@ -276,8 +308,12 @@ Figma link:
 - <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" width="20" height="20"> Git
 - <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20"> GitHub
 
+#### Warum dieses Stack?
+Angular gibt es schon lange in der Welt der Frontend JavaScript Frameworks, aber es ist nicht zu unterschätzen. React hat Angular in der popularität überholt, doch Angular erlebt zur Zeit eine "Renaissance" und da ich schon öfters React benutzt habe, wollte ich es wagen ein für mich neues JS Framework zu lernen, zusammen mit TypeScript.  
+Die restlichen Tools habe ich schon öfters verwendet und ich bin vertraut mit denen. Ich habe diese gewählt damit es nicht zu komplex wird und ich mich aufs lernen von Angular fokusieren kann.
+
 ### Systemdiagramm
-<img src="./Bilder/image.png" alt="Systemdiagramm" width="300">
+<img src="./Bilder/systemdiagramm.png" alt="Systemdiagramm" width="300">
 
 ### Angular Commands
 
@@ -309,14 +345,40 @@ Figma link:
   ng update @angular/cli @angular/core
   ```
 
+### Bilder der Implementierung
+
+#### Landing Page / Home Page
+![Landing Page](./Bilder/ss1.png)
+#### Login Page
+![Login Page](./Bilder/ss2.png)
+#### Sign Up Page
+![Sign Up Page](./Bilder/ss3.png)
+#### Versicherungsrechner
+![Versicherungsrechner](./Bilder/ss4.png)
+#### Versicherungsplan
+![Versicherungsplan](./Bilder/ss5.png)
+
+## Reflexion
+
+Während dieses Projekts habe ich eine umfassende Anwendung für einen Versicherungsrechner entwickelt, die es den Nutzern ermöglicht, Versicherungen für ihre Fahrzeuge zu berechnen und Angebote zu vergleichen. Ausgangspunkt war die Erkenntnis, dass der Markt für Versicherungsrechner gesättigt ist, jedoch neutrale Lösungen fehlen. Ich habe daher eine Anwendung erstellt, die öffentlich zugängliche Daten nutzt und einen benutzerfreundlichen Prozess für den Versicherungswechsel bietet. Durch die Nutzung von Angular und TypeScript konnte ich eine robuste und skalierbare Anwendung entwickeln, die den Anforderungen moderner Webentwicklung entspricht. Der Einsatz bekannter Entwicklungs-Tools wie Node.js und Visual Studio Code half mir, effizient zu arbeiten und die Projektziele zu erreichen.  
+
+Die Entwicklung dieser Anwendung war eine wertvolle Lernerfahrung. Ich konnte mein Wissen in Angular und TypeScript vertiefen und neue Fähigkeiten im Bereich der Webentwicklung erlangen. Besonders hilfreich war die theoretische Auseinandersetzung mit den Prinzipien der Softwarearchitektur und des UX Designs, die mir halfen, fundierte Entscheidungen zu treffen. Die größte Herausforderung war die Balance zwischen einer umfassenden Funktionalität und einer benutzerfreundlichen Oberfläche. Rückblickend würde ich das Projekt als Erfolg bewerten, da es mir gelang, eine funktionale und intuitive Anwendung zu erstellen, die den Nutzern einen echten Mehrwert bietet. In zukünftigen Projekten möchte ich öfters Angular benutzen, da mir die Art und Weise der Entwichlung sehr gefallen hat.
+
 ## Quellen / Referenzen
 
-### Vergleiche von anderen Websiten:
+**Vergleiche von anderen Websiten:**
 - [comparis.ch](https://www.comparis.ch/)
 - [AXA](https://www.axa.ch/de/privatkunden.html)
 - [Mobiliar Prämienrechner](https://secure.mobiliar.ch/praemienrechner/casa-grundlagen)
 - [Generali Autoversicherung](https://www.gch.generali.ch/privatkunden/fahrzeuge-reisen/autoversicherung/offerte-autoversicherung)
 
-### Ideen/Inspiration:
+**Ideen/Inspiration:**
 - [OpenAI Chat](https://chat.openai.com/)
 - [Figma Templates](https://www.figma.com/community/file/1232528346774034120/login-sign-up-templates-desktop?searchSessionId=lu5zlapk-1t34em9w9fc)
+
+
+**Bilder:**
+- [Landing Page Car: Jaguar XF](https://media.jaguar.com)
+- [Basic Car: Renault Clio](https://de.renault.ch/)
+- [Standard Car: VW Passat](https://www.volkswagen.ch)
+- [Premium Car: BMW I7](https://www.bmw.de)

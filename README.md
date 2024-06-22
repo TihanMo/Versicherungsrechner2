@@ -39,12 +39,14 @@ npm start
 `http://localhost:4200` im Browser öffnen
 
 ## Verfügbare Routen
-- / - Landing Page
-- /calculate - Versicherungsrechner Formular
-- /impressum - Impressum Seite
-- /datenschutz - Datenschutz Seite
-- /sign-in - Registrierungsseite
-- /login - Anmeldeseite
+- `/` - Landing Page
+- `/impressum` - Impressum Seite
+- `/datenschutz` - Datenschutz Seite
+- `/sign-in` - Registrierungsseite
+- `/login` - Anmeldeseite
+- `/versicherungsrechner` - Versicherungsrechner Formular
+- `/versicherungsplan` - Versicherungsplan Auswahlseite
+- `/abschluss` - Versicherungsabschluss Übersicht
 
 ## Entwicklungs-Setup
 ### Lokale Entwicklung
