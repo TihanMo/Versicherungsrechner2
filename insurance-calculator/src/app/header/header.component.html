@@ -1,8 +1,13 @@
-<nav class="navbar">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a routerLink="/" class="navbar-item">INSURED.CH</a>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" (click)="toggleMenu()" tabindex="0" (keyup.enter)="toggleMenu()">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </div>
+  <div class="navbar-menu" [class.is-active]="menuActive">
     <div class="navbar-center">
       <a routerLink="/" class="navbar-item">Home</a>
       <a routerLink="/versicherungsrechner" class="navbar-item">Versicherungsrechner</a>

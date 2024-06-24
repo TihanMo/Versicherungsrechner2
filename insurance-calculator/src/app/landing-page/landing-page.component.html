@@ -1,6 +1,15 @@
 <div class="landing-page">
-  <div class="card" (click)="navigateToCalculate()">
-    <img src="assets/2022-Jaguar-XE.jpg" alt="Car">
+  <div 
+    class="card" 
+    (click)="navigateToCalculate()" 
+    (keyup.enter)="navigateToCalculate()" 
+    (keydown.enter)="navigateToCalculate()" 
+    tabindex="0" 
+    role="button" 
+    aria-label="Calculate Car Insurance"
+    aria-pressed="false"
+  >
+    <img src="assets/2022-Jaguar-XE.jpg" alt="Jaguar XE car" />
     <div class="card-text">
       <p>Autoversicherung berechnen</p>
       <p>Fortfahren &#8594;</p>

@@ -64,7 +64,7 @@
         Kraftstoffart ist erforderlich.
       </div>
     </div>
-    <button type="submit" [disabled]="insuranceForm.invalid">Berechnen</button>
+    <button type="submit" [disabled]="insuranceForm.invalid" aria-label="Submit the form to calculate insurance">Berechnen</button>
   </form>
   <div *ngIf="insuranceCost !== null">
     <p>Ihre geschätzte Versicherungsprämie beträgt: {{insuranceCost | currency:'CHF'}}</p>

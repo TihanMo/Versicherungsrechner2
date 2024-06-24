@@ -1,12 +1,14 @@
 <div class="insurance-summary">
-  <h2>Versicherungssumme und Ausgewähltes Paket</h2>
-  <p>Ihre geschätzte Versicherungsprämie beträgt: {{ insuranceSum | currency:'EUR' }}</p>
-  <p>Ausgewähltes Paket: {{ selectedPackage }}</p>
-  <p>Leider können Sie bei ©INSURED.CH Ihr Auto nicht versichern. Hier sind einige Optionen, um Ihre Versicherung abzuschließen:</p>
-  <ul>
-    <li><a href="https://www.axa.ch/de/privatkunden/angebote/fahrzeug-reisen/autoversicherung.html" target="_blank">AXA</a></li>
-    <li><a href="https://www.allianz.ch/de/privatkunden/angebote/fahrzeuge-reisen/autoversicherung.html" target="_blank">Allianz</a></li>
-    <li><a href="https://www.zurich.ch/de/privat/mobilitaet-reisen/autoversicherung" target="_blank">Zurich</a></li>
-  </ul>
-  <button (click)="goBack()">Zurück</button>
+  <div class="summary-content">
+    <h2>Versicherungssumme und Ausgewähltes Paket</h2>
+    <p>Ihre geschätzte Versicherungsprämie beträgt: {{ insuranceSum | currency:'EUR' }}</p>
+    <p>Ausgewähltes Paket: {{ selectedPackage }}</p>
+    <p>Leider können Sie bei ©INSURED.CH Ihr Auto nicht versichern. Hier sind einige Optionen, um Ihre Versicherung abzuschließen:</p>
+    <ul>
+      <li><a href="https://www.axa.ch/de/privatkunden/angebote/fahrzeug-reisen/autoversicherung.html" target="_blank" rel="noopener noreferrer" aria-label="AXA Autoversicherung">AXA</a></li>
+      <li><a href="https://www.allianz.ch/de/privatkunden/angebote/fahrzeuge-reisen/autoversicherung.html" target="_blank" rel="noopener noreferrer" aria-label="Allianz Autoversicherung">Allianz</a></li>
+      <li><a href="https://www.zurich.ch/de/privat/mobilitaet-reisen/autoversicherung" target="_blank" rel="noopener noreferrer" aria-label="Zurich Autoversicherung">Zurich</a></li>
+    </ul>
+    <button (click)="goBack()" aria-label="Go back to the previous page">Zurück</button>
+  </div>
 </div>

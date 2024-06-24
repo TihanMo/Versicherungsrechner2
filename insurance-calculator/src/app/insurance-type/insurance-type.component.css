@@ -3,9 +3,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  min-height: 100vh;
   background: linear-gradient(to bottom, #1c92d2, #ffffff);
   padding: 2rem;
+  text-align: center;
 }
 
 h3 {
@@ -16,6 +17,8 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .card {
@@ -31,11 +34,13 @@ h3 {
   width: 300px;
   height: 400px;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.card:hover {
+.card:hover, .card:focus {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 .card img {
@@ -70,6 +75,18 @@ button {
   margin-top: 2rem;
 }
 
-button:hover {
+button:hover, button:focus {
   background-color: #1c8658;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
