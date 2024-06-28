@@ -1,48 +1,67 @@
+# Versicherungsrechner Angular
+
+## Autor
+
+**Name:** Tihan Morrol
+**Klasse:** 5IM22a / 2I
+**Fach:** Prog 1
+
+<br>
+
+![Deckblatt](./Bilder/Deckblatt.jpg)
+![Deckblatt Auto](./Bilder/Deckblatt_Auto.jpg)
+
+---
+
 ## Inhaltsverzeichnis
-- [Inhaltsverzeichnis](#inhaltsverzeichnis)
-- [Recherche](#recherche)
-  - [Versicherungsrechner Kennenlernen](#versicherungsrechner-kennenlernen)
-    - [Beispiele von UI](#beispiele-von-ui)
-  - [Problem Statement Map](#problem-statement-map)
-  - [Proto Personas](#proto-personas)
-    - [Laura Schülerin](#laura-schülerin)
-    - [Moritz Geschäftsleiter](#moritz-geschäftsleiter)
-    - [Maria Mutter](#maria-mutter)
-  - [Journey Map](#journey-map)
-    - [Laura Fahrschülerin](#laura-fahrschülerin)
-    - [Max Geschäftsleiter](#max-geschäftsleiter)
-    - [Maria Mutter](#maria-mutter-1)
-  - [Opportunity Areas](#opportunity-areas)
-    - [Für Laura Schülerin:](#für-laura-schülerin)
-    - [Für Max Geschäftsreisender:](#für-max-geschäftsreisender)
-    - [Für Maria Familienmutter:](#für-maria-familienmutter)
-  - [Key Screens](#key-screens)
-  - [User Stories](#user-stories)
-    - [Versicherung berechnen](#versicherung-berechnen)
-  - [Wireframe](#wireframe)
-    - [Landing Page / Home Page](#landing-page--home-page)
-    - [Login Page](#login-page)
-    - [Sign Up Page](#sign-up-page)
-    - [Versicherungsrechner](#versicherungsrechner)
-    - [Versicherungsplan](#versicherungsplan)
-- [Programmieren](#programmieren)
-  - [Tech Stack Auswahl](#tech-stack-auswahl)
-    - [Frontend:](#frontend)
-    - [Entwicklungs-Tools](#entwicklungs-tools)
-    - [Versionskontrolle](#versionskontrolle)
-    - [Warum dieses Stack?](#warum-dieses-stack)
-  - [Systemdiagramm](#systemdiagramm)
-  - [Angular Commands](#angular-commands)
-  - [Bilder der Implementierung](#bilder-der-implementierung)
-    - [Landing Page / Home Page](#landing-page--home-page-1)
-    - [Login Page](#login-page-1)
-    - [Sign Up Page](#sign-up-page-1)
-    - [Versicherungsrechner](#versicherungsrechner-1)
-    - [Versicherungsplan](#versicherungsplan-1)
-- [Reflexion](#reflexion)
-- [Quellen / Referenzen](#quellen--referenzen)
+- [Versicherungsrechner Angular](#versicherungsrechner-angular)
+  - [Autor](#autor)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Recherche](#recherche)
+    - [Versicherungsrechner Kennenlernen](#versicherungsrechner-kennenlernen)
+      - [Beispiele von UI](#beispiele-von-ui)
+    - [Ideen](#ideen)
+    - [Problem Statement Map](#problem-statement-map)
+    - [Proto Personas](#proto-personas)
+      - [Laura Schülerin](#laura-schülerin)
+      - [Moritz Geschäftsleiter](#moritz-geschäftsleiter)
+      - [Maria Mutter](#maria-mutter)
+    - [Journey Map](#journey-map)
+      - [Laura Fahrschülerin](#laura-fahrschülerin)
+      - [Max Geschäftsleiter](#max-geschäftsleiter)
+      - [Maria Mutter](#maria-mutter-1)
+    - [Opportunity Areas](#opportunity-areas)
+      - [Für Laura Schülerin:](#für-laura-schülerin)
+      - [Für Max Geschäftsreisender:](#für-max-geschäftsreisender)
+      - [Für Maria Familienmutter:](#für-maria-familienmutter)
+    - [Key Screens](#key-screens)
+    - [User Stories](#user-stories)
+      - [Versicherung berechnen](#versicherung-berechnen)
+    - [Wireframe](#wireframe)
+      - [Landing Page / Home Page](#landing-page--home-page)
+      - [Login Page](#login-page)
+      - [Sign Up Page](#sign-up-page)
+      - [Versicherungsrechner](#versicherungsrechner)
+      - [Versicherungsplan](#versicherungsplan)
+    - [Wie funktioniert der Versicherungsrechner?](#wie-funktioniert-der-versicherungsrechner)
+  - [Programmieren](#programmieren)
+    - [Tech Stack Auswahl](#tech-stack-auswahl)
+      - [Frontend:](#frontend)
+      - [Entwicklungs-Tools](#entwicklungs-tools)
+      - [Versionskontrolle](#versionskontrolle)
+      - [Warum dieses Stack?](#warum-dieses-stack)
+    - [Systemdiagramm](#systemdiagramm)
+    - [Angular Commands](#angular-commands)
+    - [Bilder der Implementierung](#bilder-der-implementierung)
+      - [Landing Page / Home Page](#landing-page--home-page-1)
+      - [Login Page](#login-page-1)
+      - [Sign Up Page](#sign-up-page-1)
+      - [Versicherungsrechner](#versicherungsrechner-1)
+      - [Versicherungsplan](#versicherungsplan-1)
+  - [Reflexion](#reflexion)
+  - [Quellen / Referenzen](#quellen--referenzen)
 
-
+---
 ## Recherche
 
 Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://miro.com/app/board/uXjVNgK5FHI=/?share_link_id=352239534071)
@@ -70,6 +89,52 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
   <img src="./Bilder/Pasted%20image%2020240324232725.png" alt="UI Beispiel 5" style="width: 80%; margin: 10px 0;">
 </div>
 
+### Ideen
+
+1. Integration von Telematik-Daten
+
+    Beschreibung: Nutzung von Telematik-Daten (z.B. Fahrverhalten, Kilometerstand) zur individuellen Prämienberechnung.
+    Vorteile:
+        Bessere Risikoabschätzung
+        Potenzielle Rabatte für sicheres Fahrverhalten
+        Transparente und nachvollziehbare Prämienberechnung
+<br>
+
+2. Umweltfreundliche Versicherungsoptionen
+
+    Beschreibung: Entwicklung von Versicherungspaketen, die umweltfreundliches Verhalten fördern, z.B. durch niedrigere Prämien für Elektrofahrzeuge oder für Nutzer, die selten fahren.
+    Vorteile:
+        Förderung nachhaltigen Verhaltens
+        Positive Unternehmensdarstellung
+        Anpassung an den wachsenden Markt für umweltfreundliche Fahrzeuge
+<br>
+
+3. Integration von Smart-Home-Daten
+
+    Beschreibung: Nutzung von Daten aus Smart-Home-Systemen zur individuellen Hausratversicherung.
+    Vorteile:
+        Präzisere Risikoabschätzung
+        Potenzielle Rabatte für Sicherheitssysteme
+        Bessere Schadensprävention durch proaktive Massnahmen
+<br>
+
+4. Community-basierte Versicherungen
+
+    Beschreibung: Entwicklung von Versicherungsprodukten, bei denen Nutzer in einer Gemeinschaft zusammenkommen und Risiken teilen, ähnlich wie bei Peer-to-Peer-Versicherungen.
+    Vorteile:
+        Kostensenkung durch gemeinschaftliche Risikoteilung
+        Aufbau von Vertrauen und Gemeinschaft
+        Transparente und faire Prämien
+<br>
+
+5. Personalisierte Versicherungsberatung durch KI
+
+    Beschreibung: Einsatz von Künstlicher Intelligenz, um Nutzern massgeschneiderte Versicherungsberatungen zu bieten, basierend auf ihren individuellen Bedürfnissen und Lebenssituationen.
+    Vorteile:
+        Hochgradig personalisierte Empfehlungen
+        Effiziente und schnelle Beratung
+        Verbesserte Kundenzufriedenheit und -bindung
+
 ### Problem Statement Map
 
 | Nutzergruppe / Zielgruppe | Problem                                                       | Lösungsidee                                                                   | Zielsetzung                            | Randbedingungen           | Stakeholder                               | Risiken                                           |
@@ -79,7 +144,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
 | Rennfahrer                | Hohe Prämien aufgrund Risikoprofil                            | Individuelle Risikobewertung, Telematiksystem                                 | Reduzierte Versicherungskosten         | Zeit, Budget, Datenschutz | Versicherungsunternehmen, Rennsportteams  | Datenmissbrauch, Einschränkung der Fahrweise      |
 | Fahrschüler               | Mangelnde Erfahrung bei Versicherungsabschluss                | Lehrmaterialien für Versicherungsverständnis                                  | Sicherheitsbewusstsein fördern         | Zeit, Budget, Datenschutz | Fahrschulen, Versicherungsunternehmen     | Überforderung, Fehlende finanzielle Mittel        |
 | Familien                  | Versicherungsprodukte passen nicht zu Familienbedürfnissen    | Angebote für Familienpakete mit spezifischen Deckungen                        | Abdeckung der Familienrisiken          | Zeit, Budget, Datenschutz | Versicherungsunternehmen, Familienberater | Unzureichende Deckung, hohe Prämien               |
-| Freiberufler              | Schwierigkeiten bei der Absicherung von Einkommen und Betrieb | Maßgeschneiderte Policen für Selbstständige mit flexiblen Zahlungsbedingungen | Sicherstellung der Betriebskontinuität | Zeit, Budget, Datenschutz | Versicherungsunternehmen, Berufsverbände  | Unvorhergesehene Risiken, unzureichende Abdeckung |
+| Freiberufler              | Schwierigkeiten bei der Absicherung von Einkommen und Betrieb | Massgeschneiderte Policen für Selbstständige mit flexiblen Zahlungsbedingungen | Sicherstellung der Betriebskontinuität | Zeit, Budget, Datenschutz | Versicherungsunternehmen, Berufsverbände  | Unvorhergesehene Risiken, unzureichende Abdeckung |
 
 ### Proto Personas
 
@@ -141,7 +206,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
      - Unsicherheit darüber, ob sie die richtige Wahl getroffen hat.
    - **Handlungen:**
      - Laura vergleicht die erhaltenen Angebote hinsichtlich Preisen, Deckungen und Kundenbewertungen.
-     - Sie schließt online die Versicherung ab und plant, ihre Begleitperson für die Fahrstunden zu kontaktieren.
+     - Sie schliesst online die Versicherung ab und plant, ihre Begleitperson für die Fahrstunden zu kontaktieren.
 
 4. **Phase: Nach dem Abschluss**
    - **Berührungspunkte:**
@@ -180,7 +245,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
     
     - **Berührungspunkte:**
         - Max spricht mit einem Versicherungsberater, um zusätzliche Informationen zu den Versicherungsoptionen zu erhalten.
-        - Er trifft eine fundierte Entscheidung und schließt online die Versicherung ab.
+        - Er trifft eine fundierte Entscheidung und schliesst online die Versicherung ab.
     - **Emotionen und Gedanken:**
         - Erleichterung darüber, eine Versicherung gefunden zu haben, die seine Bedürfnisse erfüllt.
         - Skepsis darüber, ob die gewählte Versicherung im Ernstfall ausreichend sein wird.
@@ -209,13 +274,13 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
         - Verwirrung über die Vielzahl von Versicherungsangeboten und -bedingungen.
         - Frustration über komplizierte Online-Versicherungsrechner und undurchsichtige Preisstrukturen.
     - **Handlungen:**
-        - Maria gibt die spezifischen Anforderungen ihrer Familie in verschiedene Versicherungsrechner ein, um maßgeschneiderte Angebote zu erhalten.
+        - Maria gibt die spezifischen Anforderungen ihrer Familie in verschiedene Versicherungsrechner ein, um massgeschneiderte Angebote zu erhalten.
         - Sie vergleicht die erhaltenen Angebote hinsichtlich Preisen, Deckungen und Flexibilität.
 3. **Phase: Auswahl und Abschluss der Versicherungen**
     
     - **Berührungspunkte:**
         - Maria spricht mit einem Versicherungsberater, um zusätzliche Informationen zu den Versicherungsoptionen zu erhalten.
-        - Sie trifft fundierte Entscheidungen und schließt online die Versicherungen ab.
+        - Sie trifft fundierte Entscheidungen und schliesst online die Versicherungen ab.
     - **Emotionen und Gedanken:**
         - Erleichterung darüber, Versicherungen gefunden zu haben, die die Bedürfnisse ihrer Familie erfüllen.
         - Unsicherheit darüber, ob die gewählten Versicherungen im Ernstfall ausreichend sein werden.
@@ -241,7 +306,7 @@ Der UI-Prozess ist auch auf diesem Miro Board zu finden: [Miro Board](https://mi
 
 #### Für Maria Familienmutter:
 
-1. **Personalisierte Beratung:** Einrichtung von Beratungsdiensten für Familien, um Maria dabei zu unterstützen, maßgeschneiderte Versicherungspakete auszuwählen, die ihre spezifischen Bedürfnisse und Anforderungen erfüllen.
+1. **Personalisierte Beratung:** Einrichtung von Beratungsdiensten für Familien, um Maria dabei zu unterstützen, massgeschneiderte Versicherungspakete auszuwählen, die ihre spezifischen Bedürfnisse und Anforderungen erfüllen.
     
 2. **Einfachere Online-Recherche:** Verbesserung der Online-Versicherungsrechner und -Plattformen, um Marias Suche nach Versicherungen zu vereinfachen und ihre Frustration über komplexe Recherche- und Vergleichsprozesse zu reduzieren.
 
@@ -287,6 +352,46 @@ Figma link:
 ![Versicherungsrechner](./Bilder/Versicherungsrechner.png)
 #### Versicherungsplan
 ![Versicherungsplan](./Bilder/Versicherungsplan.png)
+
+### Wie funktioniert der Versicherungsrechner?
+
+Der Versicherungsrechner ermittelt die Versicherungsprämie basierend auf verschiedenen Faktoren wie Fahrzeugdaten, Fahrerprofil und Fahrverhalten. Hier sind die Hauptschritte der Berechnung:
+
+**Eingabe der Fahrzeug- und Fahrerinformationen:**
+Der Nutzer gibt Daten wie **Automarke**, **Modell**, **Baujahr**, **Kilometerstand**, **Alter des Fahrers**, **Fahrerfahrung**, **Motorleistung** und **Treibstoffart** ein.
+
+**Berechnung des Grundbetrags:**
+Ein fester Grundbetrag wird als Ausgangspunkt verwendet.
+
+**Anpassung des Grundbetrags:**
+Der Grundbetrag wird durch mehrere Faktoren angepasst:
+
+- **Markenfaktor**: Luxusmarken erhöhen die Prämie, während Mittelklasse- und Economy-Marken geringere Auswirkungen haben.
+- **Alter des Fahrzeugs**: Ältere Fahrzeuge erhöhen die Prämie.
+- **Kilometerstand**: Fahrzeuge mit höherem Kilometerstand führen zu höheren Prämien.
+- **Alter des Fahrers**: Jüngere Fahrer zahlen mehr, ältere Fahrer erhalten Rabatte.
+- **Fahrerfahrung**: Weniger erfahrene Fahrer zahlen mehr.
+- **Motorleistung**: Fahrzeuge mit höherer Leistung führen zu höheren Prämien.
+- **Treibstoffart**: Elektrofahrzeuge haben die niedrigsten Prämien, gefolgt von Hybrid- und Benzinfahrzeugen.
+- **Bonusfaktor**: Erfahrene Fahrer oder ältere Fahrer erhalten zusätzliche Rabatte.
+
+**Endgültige Prämie:**
+Alle Faktoren werden multipliziert, um die endgültige Versicherungsprämie zu berechnen.
+
+**Auswahl des Versicherungspakets:**
+Der Nutzer kann zwischen verschiedenen Versicherungspaketen wählen:
+
+- **Basis**: Grundlegende Versicherung mit minimaler Abdeckung.
+- **Standard**: Umfassendere Versicherung mit zusätzlichem Schutz.
+- **Premium**: Maximale Abdeckung und zusätzliche Vorteile.
+
+**Beispiel:**
+
+Ein 30-jähriger Fahrer mit einem 5 Jahre alten Toyota, 50.000 km Laufleistung und 5 Jahren Fahrerfahrung würde eine moderate Prämie zahlen, angepasst an die spezifischen Faktoren seines Profils und des Fahrzeugs.
+
+Diese Struktur bietet eine massgeschneiderte Versicherungsprämie, die auf den individuellen Merkmalen des Fahrzeugs und des Fahrers basiert, und ermöglicht den Nutzern eine transparente und faire Berechnung ihrer Versicherungsprämie.
+
+---
 
 ## Programmieren
 
@@ -359,11 +464,15 @@ Die restlichen Tools habe ich schon öfters verwendet und ich bin vertraut mit d
 #### Versicherungsplan
 ![Versicherungsplan](./Bilder/ss5.png)
 
+---
+
 ## Reflexion
 
 Während dieses Projekts habe ich eine umfassende Anwendung für einen Versicherungsrechner entwickelt, die es den Nutzern ermöglicht, Versicherungen für ihre Fahrzeuge zu berechnen und Angebote zu vergleichen. Ausgangspunkt war die Erkenntnis, dass der Markt für Versicherungsrechner gesättigt ist, jedoch neutrale Lösungen fehlen. Ich habe daher eine Anwendung erstellt, die öffentlich zugängliche Daten nutzt und einen benutzerfreundlichen Prozess für den Versicherungswechsel bietet. Durch die Nutzung von Angular und TypeScript konnte ich eine robuste und skalierbare Anwendung entwickeln, die den Anforderungen moderner Webentwicklung entspricht. Der Einsatz bekannter Entwicklungs-Tools wie Node.js und Visual Studio Code half mir, effizient zu arbeiten und die Projektziele zu erreichen.  
 
-Die Entwicklung dieser Anwendung war eine wertvolle Lernerfahrung. Ich konnte mein Wissen in Angular und TypeScript vertiefen und neue Fähigkeiten im Bereich der Webentwicklung erlangen. Besonders hilfreich war die theoretische Auseinandersetzung mit den Prinzipien der Softwarearchitektur und des UX Designs, die mir halfen, fundierte Entscheidungen zu treffen. Die größte Herausforderung war die Balance zwischen einer umfassenden Funktionalität und einer benutzerfreundlichen Oberfläche. Rückblickend würde ich das Projekt als Erfolg bewerten, da es mir gelang, eine funktionale und intuitive Anwendung zu erstellen, die den Nutzern einen echten Mehrwert bietet. In zukünftigen Projekten möchte ich öfters Angular benutzen, da mir die Art und Weise der Entwichlung sehr gefallen hat.
+Die Entwicklung dieser Anwendung war eine wertvolle Lernerfahrung. Ich konnte mein Wissen in Angular und TypeScript vertiefen und neue Fähigkeiten im Bereich der Webentwicklung erlangen. Besonders hilfreich war die theoretische Auseinandersetzung mit den Prinzipien der Softwarearchitektur und des UX Designs, die mir halfen, fundierte Entscheidungen zu treffen. Die grösste Herausforderung war die Balance zwischen einer umfassenden Funktionalität und einer benutzerfreundlichen Oberfläche. Rückblickend würde ich das Projekt als Erfolg bewerten, da es mir gelang, eine funktionale und intuitive Anwendung zu erstellen, die den Nutzern einen echten Mehrwert bietet. In zukünftigen Projekten möchte ich öfters Angular benutzen, da mir die Art und Weise der Entwichlung sehr gefallen hat.
+
+---
 
 ## Quellen / Referenzen
 
@@ -372,9 +481,11 @@ Die Entwicklung dieser Anwendung war eine wertvolle Lernerfahrung. Ich konnte me
 - [AXA](https://www.axa.ch/de/privatkunden.html)
 - [Mobiliar Prämienrechner](https://secure.mobiliar.ch/praemienrechner/casa-grundlagen)
 - [Generali Autoversicherung](https://www.gch.generali.ch/privatkunden/fahrzeuge-reisen/autoversicherung/offerte-autoversicherung)
+- [Zurich](https://www.zurich.ch)
+- [Allianz](https://www.allianz.ch)
 
 **Ideen/Inspiration:**
-- [OpenAI Chat](https://chat.openai.com/)
+- [ChatGPT](https://chatgpt.com/)
 - [Figma Templates](https://www.figma.com/community/file/1232528346774034120/login-sign-up-templates-desktop?searchSessionId=lu5zlapk-1t34em9w9fc)
 
 
