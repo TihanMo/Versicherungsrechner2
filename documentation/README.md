@@ -1,10 +1,10 @@
 # Versicherungsrechner Angular
 
-## Autor
+## Autor  
 
-**Name:** Tihan Morrol
-**Klasse:** 5IM22a / 2I
-**Fach:** Prog 1
+**Name:** Tihan Morrol  
+**Klasse:** 5IM22a / 2I  
+**Fach:** Prog 1  
 
 <br>
 
